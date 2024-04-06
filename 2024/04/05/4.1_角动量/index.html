@@ -20,30 +20,43 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="技术宅拯救世界！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="泊渊居">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="4.1角动量及其守恒一、质点的角动量在我们研究旋转运动时，由于速度方向时刻发生变化，用动量来描述运动的方法不再好用。因此，物理学家们仿照动量的形式，定义出了用于描述旋转运动的角动量。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="4.1角动量">
+<meta property="og:url" content="http://example.com/2024/04/05/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/index.html">
 <meta property="og:site_name" content="泊渊居">
-<meta property="og:description" content="技术宅拯救世界！">
+<meta property="og:description" content="4.1角动量及其守恒一、质点的角动量在我们研究旋转运动时，由于速度方向时刻发生变化，用动量来描述运动的方法不再好用。因此，物理学家们仿照动量的形式，定义出了用于描述旋转运动的角动量。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%9A%E4%B9%89%E5%9B%BE%E8%A7%A31.png">
+<meta property="og:image" content="http://example.com/images/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/image.png">
+<meta property="og:image" content="http://example.com/images/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/image-1.png">
+<meta property="og:image" content="http://example.com/images/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/image-3.png">
+<meta property="og:image" content="http://example.com/images/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/image-4.png">
+<meta property="og:image" content="http://example.com/images/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/image-5.png">
+<meta property="og:image" content="http://example.com/images/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/image-6.png">
+<meta property="og:image" content="http://example.com/images/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/image-7.png">
+<meta property="og:image" content="http://example.com/images/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/image-8.png">
+<meta property="og:image" content="http://example.com/images/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/image-9.png">
+<meta property="article:published_time" content="2024-04-05T15:36:53.233Z">
+<meta property="article:modified_time" content="2024-04-06T01:40:52.882Z">
 <meta property="article:author" content="渊泽夜">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%9A%E4%B9%89%E5%9B%BE%E8%A7%A31.png">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2024/04/05/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>泊渊居</title>
+  <title>4.1角动量 | 泊渊居</title>
   
 
 
@@ -151,9 +164,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -169,10 +183,9 @@
       <meta itemprop="name" content="泊渊居">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/04/05/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/" class="post-title-link" itemprop="url">4.1角动量</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          4.1角动量
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -211,179 +224,46 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="4-1角动量及其守恒"><a href="#4-1角动量及其守恒" class="headerlink" title="4.1角动量及其守恒"></a>4.1角动量及其守恒</h1><h2 id="一、质点的角动量"><a href="#一、质点的角动量" class="headerlink" title="一、质点的角动量"></a>一、质点的角动量</h2><p>在我们研究旋转运动时，由于速度方向时刻发生变化，用动量来描述运动的方法不再好用。因此，物理学家们仿照动量的形式，定义出了用于描述旋转运动的角动量。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/04/05/4.1_%E8%A7%92%E5%8A%A8%E9%87%8F/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
+        <h1 id="4-1角动量及其守恒"><a href="#4-1角动量及其守恒" class="headerlink" title="4.1角动量及其守恒"></a>4.1角动量及其守恒</h1><h2 id="一、质点的角动量"><a href="#一、质点的角动量" class="headerlink" title="一、质点的角动量"></a>一、质点的角动量</h2><p>在我们研究旋转运动时，由于速度方向时刻发生变化，用动量来描述运动的方法不再好用。因此，物理学家们仿照动量的形式，定义出了用于描述旋转运动的角动量。</p>
+<span id="more"></span>
+<p><strong><em>注意：角动量是由动量的概念产生的，可以算是动量在旋转运动中的特化型，其物理意义本质正是动量在转动中的表现，可以将动量与角动量类比学习！</em></strong></p>
+<p>定义：角动量 $\vec{L}=\vec{r}\times\vec{p}=\vec{r}\times m\vec{v}$<br><img src="/images/4.1_角动量/角动量定义图解1.png" alt="alt text"><br>定义式中，$\vec{r}$表示从点O到质点的位置矢量，$\vec{p}$表示质点的动量。<strong><em>请注意：用角动量描述运动时，必须声明对应的参考点！！！</em></strong></p>
+<p>大小：$L=rp\sin\theta=mrv\sin\theta$<br>方向：垂直$\vec{r},\vec{p}$组成的平面 <strong>（判断：右手螺旋定则）</strong><br><strong>注意：$\vec{r}与\vec{p}$共线时，角动量为0！</strong></p>
+<p><img src="/images/4.1_角动量/image.png" alt="alt text"></p>
+<h2 id="二、质点的角动量定理"><a href="#二、质点的角动量定理" class="headerlink" title="二、质点的角动量定理"></a>二、质点的角动量定理</h2><p>【复习】质点的<strong>动量定理</strong>：由牛顿第二定律$\vec{F}=\frac{\,d\vec{p}}{\,dt}$得到$\vec{F}\cdot\,dt=\,d\vec{p}$,即$\vec{I}=\vec{p_1}-\vec{p_2}$</p>
+<p>可以看出，质点的动量定理是在研究力在时间上的累积效应，也即动量随时间的变化率。</p>
+<p>同理，角动量定理也是在研究<strong>角动量随时间的变化率</strong>。</p>
+<p><img src="/images/4.1_角动量/image-1.png" alt="alt text"></p>
+<p>与动量定理类似，角动量定理将力变为力矩，动量变为角动量。力矩M效果的本质可以理解为力的作用。</p>
+<h2 id="三、质点的角动量守恒定律"><a href="#三、质点的角动量守恒定律" class="headerlink" title="三、质点的角动量守恒定律"></a>三、质点的角动量守恒定律</h2><p>若对某一固定点，质点<strong>所受合外力矩为零</strong>，则质点对该固定点的角动量矢量保持不变。<br><img src="/images/4.1_角动量/image-3.png" alt="alt text"></p>
+<h2 id="四、质点系-的角动量及角动量守恒定律"><a href="#四、质点系-的角动量及角动量守恒定律" class="headerlink" title="四、质点系 的角动量及角动量守恒定律"></a>四、<em>质点系</em> 的角动量及角动量守恒定律</h2><p><img src="/images/4.1_角动量/image-4.png" alt="alt text"><br><img src="/images/4.1_角动量/image-5.png" alt="alt text"><br>系统中<strong>任意一对内力矩的矢量和为0</strong>，所以质点系的角动量定理和角动量守恒都只和<strong>合外力矩</strong>有关。</p>
+<p><img src="/images/4.1_角动量/image-6.png" alt="alt text"></p>
+<h2 id="五、质心参考系中的角动量"><a href="#五、质心参考系中的角动量" class="headerlink" title="五、质心参考系中的角动量"></a>五、质心参考系中的角动量</h2><p><img src="/images/4.1_角动量/image-7.png" alt="alt text"><br><img src="/images/4.1_角动量/image-8.png" alt="alt text"><br><img src="/images/4.1_角动量/image-9.png" alt="alt text"></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/04/05/001/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="渊泽夜">
-      <meta itemprop="description" content="技术宅拯救世界！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="泊渊居">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/04/05/001/" class="post-title-link" itemprop="url">001号作品——桌上伪全息投影装置</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2024-04-05 16:09:07" itemprop="dateCreated datePublished" datetime="2024-04-05T16:09:07+08:00">2024-04-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-04-06 09:25:18" itemprop="dateModified" datetime="2024-04-06T09:25:18+08:00">2024-04-06</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/" itemprop="url" rel="index"><span itemprop="name">个人作品</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><img src="/images/001/a6817ba066ffaed0daf861f51068ce6.jpg" alt="01"><br><em>效果展示</em></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/04/05/001/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/04/05/001/" rel="prev" title="001号作品——桌上伪全息投影装置">
+      <i class="fa fa-chevron-left"></i> 001号作品——桌上伪全息投影装置
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/04/05/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="渊泽夜">
-      <meta itemprop="description" content="技术宅拯救世界！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="泊渊居">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/04/05/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">002号作品——个人博客网站</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2024-04-05 15:08:29 / 修改时间：15:42:08" itemprop="dateCreated datePublished" datetime="2024-04-05T15:08:29+08:00">2024-04-05</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/" itemprop="url" rel="index"><span itemprop="name">个人作品</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="002号作品——个人博客网站"><a href="#002号作品——个人博客网站" class="headerlink" title="002号作品——个人博客网站"></a>002号作品——个人博客网站</h1><p>2024年4月5日</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -436,6 +316,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#4-1%E8%A7%92%E5%8A%A8%E9%87%8F%E5%8F%8A%E5%85%B6%E5%AE%88%E6%81%92"><span class="nav-number">1.</span> <span class="nav-text">4.1角动量及其守恒</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E8%B4%A8%E7%82%B9%E7%9A%84%E8%A7%92%E5%8A%A8%E9%87%8F"><span class="nav-number">1.1.</span> <span class="nav-text">一、质点的角动量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E8%B4%A8%E7%82%B9%E7%9A%84%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86"><span class="nav-number">1.2.</span> <span class="nav-text">二、质点的角动量定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E8%B4%A8%E7%82%B9%E7%9A%84%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B"><span class="nav-number">1.3.</span> <span class="nav-text">三、质点的角动量守恒定律</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E8%B4%A8%E7%82%B9%E7%B3%BB-%E7%9A%84%E8%A7%92%E5%8A%A8%E9%87%8F%E5%8F%8A%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B"><span class="nav-number">1.4.</span> <span class="nav-text">四、质点系 的角动量及角动量守恒定律</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E8%B4%A8%E5%BF%83%E5%8F%82%E8%80%83%E7%B3%BB%E4%B8%AD%E7%9A%84%E8%A7%92%E5%8A%A8%E9%87%8F"><span class="nav-number">1.5.</span> <span class="nav-text">五、质心参考系中的角动量</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
